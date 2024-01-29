@@ -1,0 +1,11 @@
+@import'./vars';
+
+body{
+  font-family: $ff-main;
+  font-weight: $fw-main;
+ background-color: $bgc;
+}
+.container {
+  max-width: $max-w;
+  margin: 0 auto;
+}

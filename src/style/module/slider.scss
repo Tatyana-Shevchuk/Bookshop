@@ -1,0 +1,66 @@
+@import "../base/vars";
+.slider {
+  &__images {
+    width: 1120px;
+    height: 702px;
+    position: relative;
+    @media screen and (max-width:1399px){
+     width: auto;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    &.active {
+      opacity: 1;
+    }
+  }
+  &__dots {
+    margin-top: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__dot-item {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    background: $c-noactive;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    z-index: 1000;
+    &.active {
+      background: $c-active;
+    }
+  }
+  &__link1 {
+    margin-left: 1037px;
+    width: 149px;
+    height: 204px;
+    position: absolute;
+    top: 200px;
+    @media screen and (max-width:1399px){
+     margin-left: 0;
+     top: 140px;
+    }
+    
+  }
+  &__link2 {
+    margin-left: 1140px;
+    width: 137px;
+    height: 273px;
+    position: absolute;
+    top: 470px;
+    @media screen and (max-width:1399px) {
+      margin-left: 10px;
+      top: 370px;
+    }
+  }
+}
